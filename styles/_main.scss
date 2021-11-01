@@ -1,0 +1,63 @@
+.info {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: navy url(../assets/abstractBackground.jpeg) top right no-repeat scroll;
+    background-size: 100% 100%;
+    p {
+        text-align: center;
+        padding: 5%;
+        margin: 0;
+        font-size: calc(.2vw + 3rem);
+        max-height: 50vh;
+    }
+}
+
+.contact {
+    
+}
+
+h2{
+    text-align: center;
+}
+
+.formContainer {
+    background: #8092c6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: wrap;
+    margin: 2% 15%;
+    padding: 1%;
+    label {
+        flex: 1 1 15%;
+        margin: 1%;
+    }
+    input {
+        background: white;
+        margin: 25px;
+        padding: 10px;
+        flex:1 1 75%;
+    }
+}
+
+.message {
+    height: 50vh;
+}
+
+button {
+    flex: 1 0 50%;
+    margin: 2%;
+    max-width: 20%;
+}
+
+.heyhoney {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0;
+        width: 0;
+        z-index: -1;
+}

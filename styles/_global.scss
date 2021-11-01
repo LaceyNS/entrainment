@@ -1,0 +1,22 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: calc(.2vw + 1.8rem);
+    color: white;
+    text-shadow: 2px 1.5px 2px black;
+    overflow-x: hidden;
+    background: #00258d;
+    line-height: 1.6;
+}
+
+.wrapper {
+    max-width: 2000px;
+    margin: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
