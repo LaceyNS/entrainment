@@ -10,21 +10,24 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <nav>
-                <ul>
-                    <li class="logo">
-                        <a id="siteTitle" href="#">Entrainment</a>
-                    </li>
-                    <li class="contactNav"><a href="#contact"><span>Contact Us</span></a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
+    <header>
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a id="siteTitle" href="#">Entrainment</a>
+                </li>
+                <li class="contactNav"><a href="#contact"><span>Contact Us</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <div class="wrapper">
             <section class="info">
                 <div>
                     <p>Entrainment is the coupling of two independent oscillatory systems so that their oscillations relate through phase alignment. We harness this principle for interpersonal systems.</p>
@@ -33,12 +36,18 @@
             <section id="contact" class="contact">
                 <h2>Contact Us</h2>
                 <form class="formContainer" method="POST" netlify-honeypot="heyhoney" data-netlify-recaptcha="true" data-netlify="true">
-                    <label aria-label="Enter your name here" for="name">Your name:</label>
-                    <input type="text" id="name" name="name" placeholder="John Doe" required maxlength="100">
-                    <label aria-label="Enter your e-mail here." for="email">Your e-mail:</label>
-                    <input type="text" id="email" name="email" placeholder="john@doe.com" required>
-                    <label aria-label="Leave a message here." for="message">Leave us a message:</label>
-                    <input type="text" id="message" class="message" name="message" placeholder="Leave a message">
+                    <div class="formField">
+                        <label aria-label="Enter your name here" for="name">Your name:</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required maxlength="100">
+                    </div>
+                    <div class="formField">
+                        <label aria-label="Enter your e-mail here." for="email">Your e-mail:</label>
+                        <input type="text" id="email" name="email" placeholder="john@doe.com" required>
+                    </div>
+                    <div class="formField">
+                        <label aria-label="Leave a message here." for="message">Leave us a message:</label>
+                        <textarea id="message" class="message" name="message" placeholder="Leave a message" rows=7 ></textarea>
+                    </div>
                     <!-- H o n e y p o t -->
                     <label class="heyhoney" for="phone"></label>
                     <input class="heyhoney" autocomplete="off" type="text" id="phone" name="phone" placeholder="Leave empty if you are a human">
@@ -47,8 +56,8 @@
                 </form>
                 <!-- <a id="contactLink" href="#">Contact Us</a> -->
             </section>
+        </div>
         </main>
         <footer><p>Developed by <a href="https://www.laceysavage.com">Lacey Savage</a> &#169 Entrainment 2021</p></footer>
-    </div>
     </body>
     </html>

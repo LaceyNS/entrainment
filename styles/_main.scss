@@ -14,7 +14,7 @@
 }
 
 .contact {
-    
+    min-height: 90vh;
 }
 
 h2{
@@ -24,32 +24,41 @@ h2{
 .formContainer {
     background: #8092c6;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     flex-wrap: wrap;
     margin: 2% 15%;
     padding: 1%;
-    label {
-        flex: 1 1 15%;
-        margin: 1%;
-    }
-    input {
-        background: white;
+    border-radius: 5px;
+    .formField {
+        width: calc(100% - 50px);
         margin: 25px;
-        padding: 10px;
-        flex:1 1 75%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        label {
+            flex: 1 1 15%;
+        }
+        input, textarea {
+            background: white;
+            padding: 10px;
+            flex:1 1 70%;
+            border-radius: 5px;
+        }
     }
 }
 
-.message {
-    height: 50vh;
-}
+// .message {
+//     height: 25vh;
+//     text-align: top;
+// }
 
 button {
     flex: 1 0 50%;
     margin: 2%;
-    max-width: 20%;
+    width: 200px;
+    border-radius: 5px;
 }
 
 .heyhoney {
