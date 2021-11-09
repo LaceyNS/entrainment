@@ -4,23 +4,23 @@ html {
 }
 
 body {
-    font-size: calc(.2vw + 1.8rem);
-    font-family: 'Philosopher', sans-serif;
-    color: white;
+    font-size: $fontSize;
+    font-family: $font;
+    color: $lightColour;
     text-shadow: 2px 1.5px 2px black;
     overflow-x: hidden;
-    background: #00021f;
+    background: $darkColour;
     line-height: 1.6;
 }
 
 .wrapper {
     margin: auto;
-    margin-bottom: -25px;
+    margin-bottom: -5px;
     min-height: 100%;
 }
 
 a {
-    color: white;
+    color: $lightColour;
     text-decoration: none;
 }
 
