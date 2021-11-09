@@ -486,14 +486,26 @@ button {
 footer {
   height: 35px;
   width: 100%;
+  font-size: calc(.2vw + 1.25rem);
+  margin: 1rem;
 }
 
 footer p, footer a {
+  display: inline-block;
   color: #8092c6;
-  margin: 1rem;
 }
 
 footer p a:hover, footer a a:hover {
   color: ghostwhite;
   text-decoration: underline;
+}
+
+footer p {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 320px) {
+  footer p {
+    display: block;
+  }
 }
