@@ -1,5 +1,9 @@
+header {
+    background: #0084FF;
+}
+
 nav {
-    margin: 1rem;
+    padding:1rem;
     ul {
         margin: 0;
         padding: 0;
@@ -27,6 +31,6 @@ nav {
         padding: 10px 15px;
         border: 1px solid black;
         border-radius: 5px;
-        background-color: gray;
+        background-color: #002383;
     }
 }
