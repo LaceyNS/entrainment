@@ -11,8 +11,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/90932e0d16.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -34,19 +34,19 @@
                 </div>
             </section>
             <section id="contact" class="contact">
-                <h2>Contact Us</h2>
-                <form class="formContainer shadow" method="POST" netlify-honeypot="heyhoney" data-netlify-recaptcha="true" data-netlify="true">
+                <form class="formContainer" method="POST" netlify-honeypot="heyhoney" data-netlify-recaptcha="true" data-netlify="true">
+                    <h2>Contact Us</h2>
                     <div class="formField">
-                        <label aria-label="Enter your name here" for="name">Your name:</label>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required maxlength="100">
+                        <label aria-label="Enter your name here" for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Your name here*" required maxlength="100" required>
                     </div>
                     <div class="formField">
-                        <label aria-label="Enter your e-mail here." for="email">Your e-mail:</label>
-                        <input type="text" id="email" name="email" placeholder="john@doe.com" required>
+                        <label aria-label="Enter your e-mail here." for="email"></label>
+                        <input type="text" id="email" name="email" placeholder="You@email.com*" required>
                     </div>
                     <div class="formField">
-                        <label aria-label="Leave a message here." for="message">Leave us a message:</label>
-                        <textarea id="message" class="message" name="message" placeholder="Leave a message" rows=7 ></textarea>
+                        <label aria-label="Leave a message here." for="message"></label>
+                        <textarea id="message" class="message" name="message" placeholder="Leave a message*" rows=7 required></textarea>
                     </div>
                     <!-- H o n e y p o t -->
                     <label class="heyhoney" for="phone"></label>
