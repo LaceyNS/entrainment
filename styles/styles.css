@@ -377,7 +377,15 @@ nav ul li {
 }
 
 .contact {
-  min-height: 95vh;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #00021f), color-stop(#002383), color-stop(80%, #00021f));
+  background: linear-gradient(#00021f 40%, #002383, #00021f 80%);
+}
+
+.contactIntro {
+  text-align: center;
+  margin-bottom: 15vh;
+  font-size: calc(.2vw + 3rem);
 }
 
 h2 {
@@ -404,6 +412,7 @@ h2 {
       flex-wrap: wrap;
   margin: 5vh 20vw;
   padding: 5%;
+  border-radius: 15px;
 }
 
 .formContainer .formField {
@@ -473,6 +482,36 @@ button {
   height: 0;
   width: 0;
   z-index: -1;
+}
+
+.DMSerif {
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+}
+
+.Garamond {
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+}
+
+.Merriweather {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+}
+
+.Montserrat {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.Open {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Playfair {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
 }
 
 footer {
