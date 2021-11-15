@@ -256,6 +256,12 @@ body {
   min-height: 100%;
 }
 
+h1 {
+  text-align: center;
+  font-size: calc(.2vw + 3rem);
+  padding: 10px;
+}
+
 a {
   color: ghostwhite;
   text-decoration: none;
@@ -267,7 +273,7 @@ a {
 }
 
 header {
-  background: #0084ff;
+  background: #0360b8;
 }
 
 nav {
@@ -371,9 +377,15 @@ nav ul li {
 
 .info p {
   text-align: center;
-  padding: 10% 5%;
+  padding: 5% 5%;
   font-size: calc(.2vw + 2.25rem);
   max-height: 40vh;
+}
+
+@media screen and (max-width: 420px) {
+  .info {
+    height: 125vh;
+  }
 }
 
 .contact {
@@ -385,12 +397,20 @@ nav ul li {
 .contactIntro {
   text-align: center;
   margin-bottom: 15vh;
-  font-size: calc(.2vw + 3rem);
+}
+
+.contactIntro a {
+  color: #8092c6;
+}
+
+.contact a:hover {
+  color: ghostwhite;
+  text-decoration: underline;
 }
 
 h2 {
   text-align: center;
-  color: #0084ff;
+  color: #0360b8;
 }
 
 .formContainer {
@@ -456,10 +476,10 @@ button {
   margin: 2%;
   padding: 2rem;
   width: 200px;
-  border: 1px solid #0084ff;
+  border: 1px solid #0360b8;
   border-radius: 5px;
   background: #00021f;
-  color: #0084ff;
+  color: #0360b8;
 }
 
 @media screen and (max-width: 750px) {
@@ -482,40 +502,6 @@ button {
   height: 0;
   width: 0;
   z-index: -1;
-}
-
-.fonts {
-  margin-bottom: 150px;
-}
-
-.DMSerif {
-  font-family: 'DM Serif Display', serif;
-  text-align: center;
-}
-
-.Garamond {
-  font-family: 'EB Garamond', serif;
-  text-align: center;
-}
-
-.Merriweather {
-  font-family: 'Merriweather', serif;
-  text-align: center;
-}
-
-.Montserrat {
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-}
-
-.Open {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.Playfair {
-  font-family: 'Playfair Display', serif;
-  text-align: center;
 }
 
 footer {

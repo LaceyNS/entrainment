@@ -11,9 +11,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=EB+Garamond&family=Merriweather&family=Montserrat&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/90932e0d16.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -30,22 +31,13 @@
             <div class="wrapper">
             <section class="info">
                 <div>
-                    <p>Entrainment is the coupling of two independent oscillatory systems so that their oscillations relate through phase alignment. We harness this principle for interpersonal systems.</p>
+                    <h1>Welcome to Entrainment.</h1>
+                    <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1100">Entrainment is the coupling of two independent oscillatory systems so that their oscillations relate through phase alignment. We harness this principle for interpersonal systems.</p>
                 </div>
             </section>
-            <section class="fonts">
-                <p class="Merriweather">This is written in Merriweather serif font.</p>
-                <p class="Playfair">This is written in Playfair Display serif font.</p>
-                <p class="Garamond">This is written in EB Garamond serif font.</p>
-                <p class="DMSerif">This is written in DM Serif font.</p>
-                <br>
-                <p class="Montserrat">This is written in Montserrat sans-serif font.</p>
-                <p class="Open">This is written in Open Sans sans-serif font.</p>
-            </section>
             <section id="contact" class="contact">
-                <p class="contactIntro">Welcome to Entrainment. <br> Let's get to know one another.</p>
-
-                <form class="formContainer" method="POST" netlify-honeypot="heyhoney" data-netlify-recaptcha="true" data-netlify="true">
+                <p class="contactIntro">Let's get to know one another. We'll start. <br>We are an affiliate of the <a href="https://www.psychedelicscience.ca">Canadian Centre for Psychedelic Science.</a></p>
+                <form class="formContainer" method="POST" netlify-honeypot="heyhoney" data-netlify-recaptcha="true" data-netlify="true" data-aos="zoom-in" data-aos-duration="900">
                     <h2>Contact Us</h2>
                     <div class="formField">
                         <label aria-label="Enter your name here" for="name"></label>
@@ -69,5 +61,8 @@
         </div>
         </main>
         <footer><p>Developed by <a href="https://www.laceysavage.com">Lacey Savage</a> &#169Entrainment 2021. All rights reserved.</p></footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </body>
     </html>
