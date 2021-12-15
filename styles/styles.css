@@ -371,7 +371,7 @@ nav ul li {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background: #00021f url(../assets/abstractBackground.jpeg) top right no-repeat scroll;
+  background: #00021f url(../assets/abstractBackground.webp) top right no-repeat scroll;
   background-size: 100% 100%;
 }
 
