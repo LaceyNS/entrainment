@@ -396,7 +396,7 @@ nav ul li {
 
 .contactIntro {
   text-align: center;
-  margin-bottom: 15vh;
+  margin: 5vh 5vw 15vh;
 }
 
 .contactIntro a {
@@ -436,14 +436,18 @@ h2 {
 }
 
 .formContainer .formField {
-  width: calc(100% - 50px);
-  margin: 25px;
+  width: calc(90% - 50px);
+  margin: 25px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.formContainer .formField textarea {
+  min-height: 100px;
 }
 
 .formContainer .formField input, .formContainer .formField textarea {
@@ -455,6 +459,7 @@ h2 {
           flex: 1 1 auto;
   border: none;
   border-bottom: 1px solid ghostwhite;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1000px) {
@@ -466,6 +471,7 @@ h2 {
 @media screen and (max-width: 575px) {
   .formContainer {
     margin: 5vh 5vw;
+    font-size: calc(.2vw + 1.5rem);
   }
 }
 

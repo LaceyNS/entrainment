@@ -23,7 +23,7 @@
 
 .contactIntro{
     text-align: center;
-    margin-bottom: 15vh;
+    margin: 5vh 5vw 15vh;
     a {
         color: $medLightColour;
     }
@@ -50,10 +50,13 @@ h2{
     padding: 5%;
     border-radius: 15px;
     .formField {
-        width: calc(100% - 50px);
-        margin: 25px;
+        width: calc(90% - 50px);
+        margin: 25px 0;
         display: flex;
         justify-content: center;
+        textarea {
+            min-height: 100px;
+        }
         input, textarea {
             background-color: $darkColour;
             color:$lightColour;
@@ -61,13 +64,16 @@ h2{
             flex:1 1 auto;
             border: none;
             border-bottom: 1px solid $lightColour;
+            overflow: hidden;
         }
     }
     @media screen and (max-width: 1000px) {
         margin: 5vh 10vw;
+        
     }
     @media screen and (max-width: 575px) {
         margin: 5vh 5vw;
+        font-size: calc(.2vw + 1.5rem);
     }
 }
 
